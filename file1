@@ -1,0 +1,15 @@
+import nltk
+from nltk.chat.util import Chat, reflections
+
+pairs = [
+    ['hi|hello|hey', ['Hello!', 'Hi there!', 'Hey!']],
+    ['how are you?', ['I am doing well, thank you!', 'I am great, thanks for asking.']],
+    ['name',['kailash reddy']],
+    ['bye|goodbye', ['Goodbye!', 'Bye!', 'Take care!']],
+    ['color is different',[' sorry for the inconvinence and if the  product is not good you can replace it by contacting the following contact number :9703859582 or email :virusbeast@18']], 
+     ['Age',['21']]
+]
+
+chatbot = Chat(pairs, reflections)
+chatbot.converse()
+
